@@ -6,6 +6,14 @@ public class Squirrel {
     private int size;
     private int chonklevel;
     private String name;
+
+    public Squirrel(int id, int size, int chonklevel, String name) {
+        this.id = id;
+        this.size = size;
+        this.chonklevel = chonklevel;
+        this.name = name;
+    }
+
     //Get/Set
     public void setId(int id){
         this.id = id;

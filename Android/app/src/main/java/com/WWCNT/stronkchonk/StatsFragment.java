@@ -14,6 +14,7 @@ public class StatsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        getActivity().setTitle("Stats");
         return inflater.inflate(R.layout.fragment_stats, container, false);
     }
 }
