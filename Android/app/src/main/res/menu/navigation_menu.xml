@@ -3,16 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
     <item
-        android:id="@+id/page1"
-        android:title="Page 1" />
+        android:id="@+id/nav_stats"
+        android:title="Stats" />
 
     <item
-        android:id="@+id/page2"
-        android:title="Page 2" />
+        android:id="@+id/nav_activitylog"
+        android:title="Activity Log" />
 
     <item
-        android:id="@+id/page3"
-        android:title="Page 3" />
+        android:id="@+id/nav_settings"
+        android:title="Settings" />
     </group>
 </menu>
