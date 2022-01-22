@@ -32,12 +32,20 @@
             android:textSize="25sp"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/startButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical"
             android:text="@string/start" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:text="@string/stop" />
 
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView
