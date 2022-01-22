@@ -28,12 +28,18 @@ public class ActivityLogFragment extends Fragment {
         Workout w2 = new Workout(2,"ChonkWork2",timetest, timetest, 20, 50);
         Workout w3 = new Workout(3,"ChonkWork3",timetest, timetest, 50, 50);
         Workout w4 = new Workout(4,"ChonkWork4",timetest, timetest, 90, 50);
+        Workout w5 = new Workout(4,"ChonkWork4",timetest, timetest, 90, 50);
+        Workout w6 = new Workout(4,"ChonkWork4",timetest, timetest, 90, 50);
+        Workout w7 = new Workout(4,"ChonkWork4",timetest, timetest, 90, 50);
 
         ArrayList<Workout> workoutTests = new ArrayList<>();
         workoutTests.add(w1);
         workoutTests.add(w2);
         workoutTests.add(w3);
         workoutTests.add(w4);
+        workoutTests.add(w5);
+        workoutTests.add(w6);
+        workoutTests.add(w7);
 
         WorkoutListAdapter adapter = new WorkoutListAdapter(getActivity(), R.layout.adapter_view_layout, workoutTests);
         ListView aListView = actLogView.findViewById(R.id.listView);
