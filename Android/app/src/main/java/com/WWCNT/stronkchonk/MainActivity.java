@@ -60,28 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_home);
         }
 
-       /*The buggy code:
-       Chronometer chrono = findViewById(R.id.simpleChronometer);
 
-        Button startButton = findViewById(R.id.startButton);
-        startButton.setOnClickListener(new OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                chrono.setBase(SystemClock.elapsedRealtime());
-                chrono.start();
-            }
-        });
-
-        Button stopButton = findViewById(R.id.stopButton);
-        stopButton.setOnClickListener(new OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                chrono.stop();
-            }
-        });
-        */
 
     }
 
