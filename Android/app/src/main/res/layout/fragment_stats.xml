@@ -3,12 +3,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/LaurelGreen">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/firstTest">
+            <ImageView
+                android:src="@drawable/mrchonk"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:textAlignment="center"
+                android:text="Acorn"
+                android:gravity="center"
+                android:id="@+id/textAcorn"
+                android:layout_weight="30"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stats"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/squirrelNameHolder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/firstTest">
+
+            <TextView
+                android:id="@+id/squirrelName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:text="Mr Chonks"
+                />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/squirrelNameHolder"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/Celadon">\
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Test"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/squirrelSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Size"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Chonk Level"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/squirrelChonkLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Test"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
