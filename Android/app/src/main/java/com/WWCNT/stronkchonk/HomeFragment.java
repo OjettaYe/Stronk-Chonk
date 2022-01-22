@@ -46,6 +46,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
          homeView = inflater.inflate(R.layout.fragment_home, container, false);
+      
+      getActivity().setTitle("Stronk Chonk");
 
          hours = homeView.findViewById(R.id.hours);
          ArrayAdapter<CharSequence> hoursAdapter = ArrayAdapter.createFromResource(getContext(),
