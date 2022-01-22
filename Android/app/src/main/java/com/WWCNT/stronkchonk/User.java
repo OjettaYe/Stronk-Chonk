@@ -8,6 +8,11 @@ public class User {
     private String name;
     private ArrayList<Workout> workouts;
 
+    public User(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+
     //GetSet Methods;
     public void setId(int id) {
         this.id = id;
