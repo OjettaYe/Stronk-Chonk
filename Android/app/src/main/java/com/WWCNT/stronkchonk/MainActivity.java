@@ -18,6 +18,7 @@ import com.WWCNT.stronkchonk.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Chronometer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,5 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Chronometer chrono = findViewById(R.id.simpleChronometer);
     }
 }
