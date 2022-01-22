@@ -1,2 +1,5 @@
-# McHacks-WWCNT
-We Write Code Not Tragedies
+# Stronk Chonk
+
+Team: We Write Code Not Tragedies
+
+Application: The only workout game you'll ever need
