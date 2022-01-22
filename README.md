@@ -1,4 +1,4 @@
-# Strong Chonk
+# Stronk Chonk
 
 Team: We Write Code Not Tragedies
 
