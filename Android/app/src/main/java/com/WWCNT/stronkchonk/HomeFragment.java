@@ -37,12 +37,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
          homeView = inflater.inflate(R.layout.fragment_home, container, false);
+         getActivity().setTitle("Stronk Chonk");
          textCountdown = homeView.findViewById(R.id.countdownTimer);
          startButton = homeView.findViewById(R.id.startButton);
          startButton.setOnClickListener(this);
          resetButton = homeView.findViewById(R.id.resetButton);
          resetButton.setOnClickListener(this);
-        resetButton.setVisibility(View.INVISIBLE);
+         resetButton.setVisibility(View.INVISIBLE);
          return homeView;
 
     }

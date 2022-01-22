@@ -21,6 +21,7 @@ public class ActivityLogFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         actLogView = inflater.inflate(R.layout.fragment_activitylog, container, false);
+        getActivity().setTitle("Activity Log");
         //Test Workouts
         Time timetest = Time.valueOf("14:00:00");
         Workout w1 = new Workout(1,"ChonkWork1",timetest, timetest, 30, 50);
