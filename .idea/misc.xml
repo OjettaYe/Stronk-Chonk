@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable/bg_colour.xml" value="0.8" />
+        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable/splash_animarion.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable/splash_animation.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/splash_activity.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>
