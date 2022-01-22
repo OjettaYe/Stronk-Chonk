@@ -10,13 +10,38 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <!--    Navigation Drawer-->
+  
+    <!-- Navigation Drawer-->
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- Button names -->
     <string name="start">Start</string>
-    <string name="stop">Stop</string>
     <string name="reset">Reset</string>
+
+    <!-- Spinner -->
+    <string-array name="hours">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="minutes">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
 
 </resources>

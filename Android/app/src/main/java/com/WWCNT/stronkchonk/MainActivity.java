@@ -26,6 +26,8 @@ import com.WWCNT.stronkchonk.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Chronometer;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Strong Chonk");
 
         //Navigation Bar.
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -57,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, HomeFragment.class, null).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
+
+
 
     }
 
@@ -80,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 
     @Override
     public void onBackPressed() {

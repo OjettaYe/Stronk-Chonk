@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
@@ -7,54 +7,185 @@
     android:layout_height="match_parent"
     android:background="@color/LaurelGreen">
 
-    <Chronometer
-        android:id="@+id/simpleChronometer"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/WorkoutChonkHolder">
+        <ImageView
+            android:src="@drawable/mrchonk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Acorn"
+            android:gravity="center"
+            android:id="@+id/WorkoutChonk"
+            android:layout_weight="30"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/WorkoutSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="292dp"
-        android:gravity="center_horizontal"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/WorkoutChonkHolder"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+<!--            android:layout_marginStart="128dp"-->
+<!--            android:layout_marginTop="168dp"-->
+<!--            android:minHeight="48dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/minutes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+<!--            android:layout_marginStart="200dp"-->
+<!--            android:layout_marginTop="128dp"-->
+<!--            android:minHeight="48dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="340dp"
-        android:orientation="vertical"
-        android:text="@string/start"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/WorkoutSpinner"
+        android:id="@+id/WorkoutTimer">
 
-    <Button
-        android:id="@+id/stopButton"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/countdownTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="404dp"
-        android:orientation="vertical"
-        android:text="@string/stop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/WorkoutStart"
+        android:layout_below="@+id/WorkoutTimer">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:text="@string/start"
+                android:textAlignment="center" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Home"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        android:id="@+id/WorkoutReset"
+        android:layout_below="@+id/WorkoutStart">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/countdownTimer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="128dp"-->
+<!--        android:layout_marginTop="248dp"-->
+<!--        android:text="00:00"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="60sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="160dp"-->
+<!--        android:layout_marginTop="340dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:text="@string/start"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/resetButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="160dp"-->
+<!--        android:layout_marginTop="404dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:text="@string/reset"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:text="Home"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.484"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.049" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/hours"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="66dp"-->
+<!--        android:layout_marginStart="128dp"-->
+<!--        android:layout_marginTop="168dp"-->
+<!--        android:minHeight="48dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/minutes"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="117dp"-->
+<!--        android:layout_marginStart="200dp"-->
+<!--        android:layout_marginTop="128dp"-->
+<!--        android:minHeight="48dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+</RelativeLayout>
