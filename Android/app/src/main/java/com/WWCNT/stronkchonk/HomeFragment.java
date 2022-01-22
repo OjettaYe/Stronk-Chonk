@@ -14,15 +14,20 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.Locale;
 
 public class HomeFragment extends Fragment implements View.OnClickListener{
-    private long START_TIME_IN_MILLIS = 600000;
+
     private View homeView;
+
+    private Spinner hours;
+    private Spinner minutes;
 
     private TextView textCountdown;
     private CountDownTimer countdownTimer;
@@ -30,25 +35,60 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     private Button startButton;
     private Button resetButton;
 
+    private long START_TIME_IN_MILLIS;
+    private long timeLeftInMillis;
+
     private boolean timerRunning;
-    private long timeLeftInMillis = START_TIME_IN_MILLIS;
+    private boolean fromTheStart;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
          homeView = inflater.inflate(R.layout.fragment_home, container, false);
-         getActivity().setTitle("Stronk Chonk");
+      
+      getActivity().setTitle("Stronk Chonk");
+
+         hours = homeView.findViewById(R.id.hours);
+         ArrayAdapter<CharSequence> hoursAdapter = ArrayAdapter.createFromResource(getContext(),
+                 R.array.hours, android.R.layout.simple_spinner_item);
+         hoursAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+         hours.setAdapter(hoursAdapter);
+
+         minutes = homeView.findViewById(R.id.minutes);
+         ArrayAdapter<CharSequence> minutesAdapter = ArrayAdapter.createFromResource(getContext(),
+                 R.array.minutes, android.R.layout.simple_spinner_item);
+         minutesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+         minutes.setAdapter(minutesAdapter);
+
          textCountdown = homeView.findViewById(R.id.countdownTimer);
+
          startButton = homeView.findViewById(R.id.startButton);
          startButton.setOnClickListener(this);
+
          resetButton = homeView.findViewById(R.id.resetButton);
          resetButton.setOnClickListener(this);
          resetButton.setVisibility(View.INVISIBLE);
-         return homeView;
 
+         setTime();
+         timeLeftInMillis = START_TIME_IN_MILLIS;
+
+         return homeView;
     }
 
     // countdown code from https://gist.github.com/codinginflow/58fddb4dcdb35ce7a7ff78aaa607c6ee
+
+    private void updateTime(){
+        String selectedHours = hours.getSelectedItem().toString();
+        String selectedMinutes = minutes.getSelectedItem().toString();
+        int hou = Integer.parseInt(selectedHours) * 3600000;
+        int min = Integer.parseInt(selectedMinutes) * 60000;
+        START_TIME_IN_MILLIS = hou + min;
+    }
+
+    private void setTime(){
+        START_TIME_IN_MILLIS = 600000;
+    }
 
     @Override
     public void onClick(View view) {
@@ -57,16 +97,20 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
                 if (timerRunning){
                     pauseTimer();
                 } else {
+                    if (fromTheStart) setTime();
                     startTimer();
                 }
                 break;
             case R.id.resetButton:
+                fromTheStart = true;
                 resetTimer();
                 break;
         }
     }
 
     private void startTimer() {
+        updateTime();
+        fromTheStart = false;
         countdownTimer = new CountDownTimer(timeLeftInMillis,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
