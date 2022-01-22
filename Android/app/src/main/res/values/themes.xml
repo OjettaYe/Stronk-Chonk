@@ -17,9 +17,10 @@
     <style name="Theme.StronkChonk.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-
+<!--Navigation Bar-->
     <style name="Theme.StronkChonk.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.StronkChonk.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
