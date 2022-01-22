@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.SystemClock;
 import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
@@ -24,6 +25,9 @@ import com.WWCNT.stronkchonk.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Chronometer;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -87,5 +91,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             super.onBackPressed();
         }
+
+        Chronometer chrono = findViewById(R.id.simpleChronometer);
+
+        Button startButton = findViewById(R.id.startButton);
+        startButton.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                chrono.setBase(SystemClock.elapsedRealtime());
+                chrono.start();
+            }
+        });
+
+        Button stopButton = findViewById(R.id.stopButton);
+        stopButton.setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                chrono.stop();
+            }
+        });
+
     }
 }
