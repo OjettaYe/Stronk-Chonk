@@ -14,10 +14,10 @@
     <color name="Celadon">#BAD9A2</color>
     <color name="CambridgeBlue">#9DC4B5</color>
     <color name="Brown">#756148</color>
-<!--Design Colors    -->
-    <colors name="DarkOrange">#C16200</colors>
-    <colors name="Reddish">#CA5736</colors>
-    <colors name="WhiteYellow">#F1E6BF</colors>
-    <colors name="Brown">#703C1F</colors>
-    <colors name="GreenYellow">#D8D879</colors>
+<!--Design Colors-->
+    <color name="DarkOrange">#C16200</color>
+    <color name="Reddish">#CA5736</color>
+    <color name="WhiteYellow">#F1E6BF</color>
+    <color name="BrownA">#703C1F</color>
+    <color name="GreenYellow">#D8D879</color>
 </resources>
