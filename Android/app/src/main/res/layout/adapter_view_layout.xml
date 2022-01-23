@@ -1,112 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="100">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop = "10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop = "10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/WhiteYellow">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/firstTest">
-                <ImageView
-                    android:src="@drawable/acorn"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:textAlignment="center"
-                    android:text="Acorn"
-                    android:gravity="center"
-                    android:id="@+id/textAcorn"
-                    android:layout_weight="80"
-                />
+            android:layout_weight="66.66">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/textAcorn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:src="@drawable/acorn_with_frame"
+        android:text="Acorn"
+        android:textAlignment="center"/>
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:textAlignment="center"
-                    android:text="Workout Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textAcornEXP"
+                    android:text="EXP"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@+id/textAcorn"
+                    android:layout_alignRight="@+id/textAcorn"
+                    android:layout_alignTop="@+id/textAcorn"
+                    android:layout_alignBottom="@+id/textAcorn"
                     android:gravity="center"
-                    android:id="@+id/textView1"
-                    android:layout_weight="60"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:textAlignment="center"
-                    android:text="Date"
-                    android:gravity="center"
-                    android:id="@+id/textView00"
-                    android:layout_weight="60"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@color/black"
                     />
 
+            </RelativeLayout>
         </LinearLayout>
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.33">
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/firstTest">
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewWN"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:text="Workout Name"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
+                android:id="@+id/textViewLength"
+                android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_weight="66.6"
+                android:layout_weight="80"
                 android:gravity="center"
                 android:text="Length"
-                android:textAlignment="center" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView1"
-                android:layout_weight="33.3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="Start Time" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/textView3"
-                    android:gravity="center"
-                    android:text="End Time" />
-            </LinearLayout>
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
-    </RelativeLayout>
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:textAlignment="center"-->
-<!--        android:text="TextView1"-->
-<!--        android:gravity="center"-->
-<!--        android:id="@+id/textView1"-->
-<!--        android:layout_weight="66.6"/>-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="33.3"-->
-<!--        android:orientation="vertical"-->
-<!--        android:layout_below="@+id/textView1">-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:text="Lorem Ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod
+tempor incidunt ut labore et dolore magna aliqua"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView2"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:text="TextView2"-->
-<!--            android:gravity="center"/>-->
-<!--        <TextView-->
-<!--            android:gravity="center"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:text="TextView3"-->
-<!--            android:id="@+id/textView3"-->
-<!--            android:layout_below="@+id/textView2"/>-->
-<!--    </LinearLayout>-->
-
+    </LinearLayout>
+</LinearLayout>
 </LinearLayout>
