@@ -20,4 +20,5 @@
     <color name="WhiteYellow">#F1E6BF</color>
     <color name="BrownA">#703C1F</color>
     <color name="GreenYellow">#D8D879</color>
+    <color name="transparent">#00000000</color>
 </resources>

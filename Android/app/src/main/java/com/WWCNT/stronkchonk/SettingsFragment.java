@@ -32,7 +32,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         inputText = (EditText) settingsView.findViewById(R.id.NameEdit);
         editButton = (Button) settingsView.findViewById(R.id.NameEditButton);
         editButton.setOnClickListener(this);
-        tvNameTEST = (TextView) settingsView.findViewById(R.id.testChonks);
+//        tvNameTEST = (TextView) settingsView.findViewById(R.id.testChonks);
 
         return settingsView;
     }
@@ -44,9 +44,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 inputText = (EditText) settingsView.findViewById(R.id.NameEdit);
                 String name = inputText.getText().toString();
                 editButton.setText(name);
-//                tvName = (TextView) settingsView.findViewById(R.id.ChonkyUsername);
+                tvName = (TextView) settingsView.findViewById(R.id.ChonkyUsername);
 //                tvName.setText("TEST");
-                tvNameTEST.setText(name);
+//                tvNameTEST.setText(name);
                 break;
         }
 
