@@ -1,6 +1,5 @@
 package com.WWCNT.stronkchonk;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.LayoutInflater;
@@ -76,6 +75,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             chrono.setBase(SystemClock.elapsedRealtime());
         }
         chrono.start();
+
+        chrono.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+
+            @Override
+            public void onChronometerTick(Chronometer chronometer) {
+                toggleChonk();
+            }
+        });
+
         atZero = false;
         running = true;
         resetButton.setVisibility(View.INVISIBLE);
