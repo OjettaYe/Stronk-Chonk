@@ -42,16 +42,18 @@ public class WorkoutListAdapter extends ArrayAdapter<Workout> {
         LayoutInflater inflater = LayoutInflater.from(aContext);
         convertView = inflater.inflate(aResource, parent, false);
 
-        TextView tvName = (TextView) convertView.findViewById(R.id.textView1);
+        TextView tvName = (TextView) convertView.findViewById(R.id.textViewWN);
 //        TextView tvDate = (TextView) convertView.findViewById(R.id.textView00);
-        TextView tvLength = (TextView) convertView.findViewById(R.id.textView10);
-        TextView tvStartTime = (TextView) convertView.findViewById(R.id.textView3);
-        TextView tvEndTime = (TextView) convertView.findViewById(R.id.textView4);
+        TextView tvLength = (TextView) convertView.findViewById(R.id.textViewLength);
+        TextView tvEXP = (TextView) convertView.findViewById(R.id.textAcornEXP);
+//        TextView tvStartTime = (TextView) convertView.findViewById(R.id.textView3);
+//        TextView tvEndTime = (TextView) convertView.findViewById(R.id.textView4);
 
         tvName.setText(name);
         tvLength.setText(Integer.toString(length));
-        tvStartTime.setText(startTime.toString());
-        tvEndTime.setText(endTime.toString());
+        tvEXP.setText(Integer.toString(exp));
+//        tvStartTime.setText(startTime.toString());
+//        tvEndTime.setText(endTime.toString());
 
         return convertView;
     }
