@@ -11,16 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/WorkoutChonkHolder">
+
         <ImageView
-            android:src="@drawable/mrchonk"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:text="Acorn"
-            android:gravity="center"
-            android:id="@+id/WorkoutChonk"
-            android:layout_weight="30"
-            />
+            android:id="@+id/liftchonk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lifting_chonk_1" />
+
+        <ImageView
+            android:id="@+id/liftchonk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/lifting_chonk_2" />
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/WorkoutSpinner"
@@ -115,7 +119,7 @@
 
     </LinearLayout>
 
-<!--    <TextView-->
+    <!--    <TextView-->
 <!--        android:id="@+id/countdownTimer"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
