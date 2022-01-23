@@ -8,7 +8,7 @@ Ojetta Ye <br />
 Angela Zhu <br />
   </p>
 
-## The Application: The Only Workout Game You'll Ever Need
+## The Only Workout Game You'll Ever Need
 ### 
 In this game, the user has a mission of the utmost importance... taking care of Mr.Chonky, the neighborhood squirrel! Spending time workout out in real life is converted, in the game, as time spent gathering acorns. Therefore, the more time spent working out, the more acorns are gathered, and the chonkier the squirrel will become, providing it excellent protection for the harsh Canadian winter ahead. <br/> 
 So work out like your life depends on it! Because it does, for the squirrel. </br> 
@@ -18,7 +18,7 @@ So work out like your life depends on it! Because it does, for the squirrel. </b
 
 ![Splash Screen](Documentation/SplashScreen.png) <br/>
 <br/> 
-The user is then brought to the home page where the timer awaits. Once the user is ready to work out, they can press the start button, and the mushroom-chronometer will 
+The user is first brought to the home page where the timer awaits. Once the user is ready to work out, they can press the start button, and the mushroom-chronometer will 
 keep time. If anything interrupts their work out, they are free to pause the timer. Once the work out session is finished, the user can press the reset button to reset the time to zero, and the recorded time will be saved as a separated entry in the activity log. The squirrel will work out alongside with them, in encouragement. <br/>
 <br/>
 
