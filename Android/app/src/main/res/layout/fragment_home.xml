@@ -29,13 +29,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/lifting_chonk_1" />
 
-        <ImageView
-            android:id="@+id/liftchonk2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/lifting_chonk_2" />
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/WorkoutSpinner"

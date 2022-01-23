@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -32,6 +33,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
     private TextView textCountdown;
     private CountDownTimer countdownTimer;
+
+    private ImageView frame1;
+    private boolean frame1vis;
 
     private Button startButton;
     private Button resetButton;
@@ -61,6 +65,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
                  R.array.minutes, android.R.layout.simple_spinner_item);
          minutesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
          minutes.setAdapter(minutesAdapter);
+
+         frame1 = homeView.findViewById(R.id.liftchonk1);
+         frame1vis = true;
 
          textCountdown = homeView.findViewById(R.id.countdownTimer);
 
@@ -116,6 +123,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             public void onTick(long millisUntilFinished) {
                 timeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
+                toggleChonk();
             }
 
             @Override
@@ -156,6 +164,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 
         textCountdown.setText(timeLeftFormatted);
+    }
+
+    private void toggleChonk(){
+        if (frame1vis){
+            frame1.setImageResource(R.drawable.lifting_chonk_2);
+            frame1vis = false;
+        } else {
+            frame1.setImageResource(R.drawable.lifting_chonk_1);
+            frame1vis = true;
+        }
     }
 
 }
