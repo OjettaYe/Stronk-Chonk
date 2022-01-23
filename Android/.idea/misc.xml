@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14375" />
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable/background_splashscreen.xml" value="0.14322916666666666" />
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14375" />
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/activity_main.xml" value="0.12760416666666666" />
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/activity_splash_screen.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/Nezha/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/content_main.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_activitylog.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_first.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_home.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_second.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_settings.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/angel/Documents/GitHub/Stronk-Chonk/Android/app/src/main/res/layout/fragment_stats.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/cinnamon/Documents/GitHub/McHacks-WWCNT/Android/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/cinnamon/Documents/GitHub/McHacks-WWCNT/Android/app/src/main/res/layout/content_main.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/cinnamon/Documents/GitHub/McHacks-WWCNT/Android/app/src/main/res/layout/fragment_first.xml" value="0.26666666666666666" />
@@ -16,7 +17,7 @@
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/activity_main.xml" value="0.23125" />
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/content_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/fragment_first.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/fragment_second.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/layout/nav_header.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/ojett/Documents/McGill/Stronk-Chonk/Android/app/src/main/res/menu/menu_main.xml" value="0.17552083333333332" />
