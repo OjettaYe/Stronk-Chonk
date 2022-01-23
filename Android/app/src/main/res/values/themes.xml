@@ -23,4 +23,9 @@
 <!--Navigation Bar-->
     <style name="Theme.StronkChonk.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.StronkChonk.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--Splash Page-->
+    <style name="SplashScreen" parent="Theme.StronkChonk.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
 </resources>
