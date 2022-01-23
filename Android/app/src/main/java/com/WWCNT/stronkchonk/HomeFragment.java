@@ -14,6 +14,7 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -39,7 +40,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     private long timeLeftInMillis;
 
     private boolean timerRunning;
-    private boolean fromTheStart;
+    private boolean changedTime; // TODO: detect changed time
 
     @Nullable
     @Override
@@ -70,25 +71,26 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
          resetButton.setOnClickListener(this);
          resetButton.setVisibility(View.INVISIBLE);
 
-         setTime();
+         START_TIME_IN_MILLIS = 3600000;
          timeLeftInMillis = START_TIME_IN_MILLIS;
 
          return homeView;
     }
-
-    // countdown code from https://gist.github.com/codinginflow/58fddb4dcdb35ce7a7ff78aaa607c6ee
 
     private void updateTime(){
         String selectedHours = hours.getSelectedItem().toString();
         String selectedMinutes = minutes.getSelectedItem().toString();
         int hou = Integer.parseInt(selectedHours) * 3600000;
         int min = Integer.parseInt(selectedMinutes) * 60000;
-        START_TIME_IN_MILLIS = hou + min;
+        int time = hou + min;
+        if (time == 0){
+            START_TIME_IN_MILLIS = 3600000;
+        } else {
+            START_TIME_IN_MILLIS = time;
+        }
     }
 
-    private void setTime(){
-        START_TIME_IN_MILLIS = 600000;
-    }
+    // countdown code from https://gist.github.com/codinginflow/58fddb4dcdb35ce7a7ff78aaa607c6ee
 
     @Override
     public void onClick(View view) {
@@ -97,12 +99,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
                 if (timerRunning){
                     pauseTimer();
                 } else {
-                    if (fromTheStart) setTime();
                     startTimer();
                 }
                 break;
+
             case R.id.resetButton:
-                fromTheStart = true;
                 resetTimer();
                 break;
         }
@@ -110,7 +111,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
     private void startTimer() {
         updateTime();
-        fromTheStart = false;
         countdownTimer = new CountDownTimer(timeLeftInMillis,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -142,6 +142,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     }
 
     private void resetTimer() {
+        updateTime();
         timeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         resetButton.setVisibility(View.INVISIBLE);
