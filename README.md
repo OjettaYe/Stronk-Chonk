@@ -10,7 +10,7 @@ Angela Zhu <br />
 
 ## The Only Workout Game You'll Ever Need
 ### 
-In this game, the user has a mission of the utmost importance... taking care of Mr.Chonky, the neighborhood squirrel! Spending time workout out in real life is converted, in the game, as time spent gathering acorns. Therefore, the more time spent working out, the more acorns are gathered, and the chonkier the squirrel will become, providing it excellent protection for the harsh Canadian winter ahead. <br/> 
+In this game, the user has a mission of the utmost importance... taking care of Mr.Chonky, the neighborhood squirrel! Spending time working out in real life is converted, in the game, as time spent gathering acorns. Therefore, the more time spent working out, the more acorns are gathered, and the chonkier the squirrel will become, providing it excellent protection for the harsh Canadian winter ahead. <br/> 
 So work out like your life depends on it! Because it does, for the squirrel. </br> 
 <p align=center> 
   Welcome to Stronk Chonk. </br>
