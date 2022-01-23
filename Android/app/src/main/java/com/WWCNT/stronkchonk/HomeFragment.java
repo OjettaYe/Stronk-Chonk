@@ -102,10 +102,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
     private void toggleChonk(){
         if (frame1vis){
-            frame1.setImageResource(R.drawable.lifting_chonk_2);
+            frame1.setImageResource(R.drawable.lifting_chonk_2_uncropped);
             frame1vis = false;
         } else {
-            frame1.setImageResource(R.drawable.lifting_chonk_1);
+            frame1.setImageResource(R.drawable.lifting_chonk_1_uncropped);
             frame1vis = true;
         }
     }

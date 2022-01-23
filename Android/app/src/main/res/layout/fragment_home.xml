@@ -63,6 +63,26 @@
 <!--            android:minHeight="48dp"-->
 <!--            app:layout_constraintStart_toStartOf="parent"-->
 <!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,8 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:textSize="60sp"
-            />
+            android:textSize="60sp" />
 
         <!--
         <TextView
@@ -100,7 +119,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/startButton"
@@ -118,6 +137,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/WorkoutReset"
         android:layout_below="@+id/WorkoutStart">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -135,7 +155,7 @@
 
     </LinearLayout>
 
-    <!--    <TextView-->
+        <!--    <TextView-->
 <!--        android:id="@+id/countdownTimer"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
