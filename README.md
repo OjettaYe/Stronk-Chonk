@@ -30,7 +30,7 @@ to navigate to the other pages in this app. There is an activity log available, 
 ![Hamburger](Documentation/Hamburger.png) <br/>
 <br/>
 
-The user can view their past work outs, as well as add in notes on the type of workout, or exertion levels for example, in the Activity Log Page, pictured below. <br/> <br/>
+The user can view their past workouts, as well as add in notes on the type of workout, or exertion levels for example, in the Activity Log Page, pictured below. <br/> <br/>
 ![Activity Log](Documentation/ActivityLog.png) <br/> <br/> 
 
 In the settings, the user can change their username. <br/> <br/>
