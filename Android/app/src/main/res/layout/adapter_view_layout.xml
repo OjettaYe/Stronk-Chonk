@@ -32,22 +32,22 @@
         android:src="@drawable/acorn_with_frame"
         android:text="Acorn"
         android:textAlignment="center"/>
+
                 <TextView
+                    android:id="@+id/textAcornEXP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textAcornEXP"
-                    android:text="EXP"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
                     android:layout_alignLeft="@+id/textAcorn"
-                    android:layout_alignRight="@+id/textAcorn"
                     android:layout_alignTop="@+id/textAcorn"
+                    android:layout_alignRight="@+id/textAcorn"
                     android:layout_alignBottom="@+id/textAcorn"
                     android:gravity="center"
                     android:paddingLeft="15dp"
                     android:paddingTop="25dp"
+                    android:text="EXP"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
         </LinearLayout>
